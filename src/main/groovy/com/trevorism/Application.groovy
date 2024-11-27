@@ -10,9 +10,9 @@ import org.slf4j.LoggerFactory
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "App",
+                title = "Network",
                 version = "0.0.1",
-                description = "API",
+                description = "Register Trevorism Networks and Network Nodes",
                 contact = @Contact(url = "https://trevorism.com", name = "Trevor Brooks", email = "tbrooks@trevorism.com")
         )
 )
