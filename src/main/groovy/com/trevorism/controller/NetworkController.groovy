@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory
 @Controller("/api/network")
 class NetworkController {
 
-    private static final Logger log = LoggerFactory.getLogger(RootController)
+    private static final Logger log = LoggerFactory.getLogger(NetworkController)
 
     @Inject
     NetworkService networkService
@@ -30,7 +30,8 @@ class NetworkController {
     Network createNetwork(@Body Network network) {
         try {
             return networkService.createNetwork(network)
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            log.error("Unable to create network", e)
             throw new HttpStatusException(HttpStatus.BAD_REQUEST, "Unable to create network")
         }
     }
