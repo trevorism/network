@@ -43,7 +43,7 @@ class DefaultNetworkService implements NetworkService {
             deleteNetworkNode(id, it.id)
         }
         Network deleted = repository.delete(id)
-        String topicName = "${NETWORK_PREFIX}${deleted.id}"
+        String topicName = "${NETWORK_PREFIX}${deleted.name}"
         channelClient.deleteTopic(topicName)
 
         return deleted
