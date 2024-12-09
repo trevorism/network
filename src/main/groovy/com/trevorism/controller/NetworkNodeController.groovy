@@ -55,7 +55,7 @@ class NetworkNodeController {
 
     @Tag(name = "Network Node Operations")
     @Operation(summary = "Get node details **Secure")
-    @Get(value = "/{networkId}/node/{id}", produces = MediaType.TEXT_PLAIN)
+    @Get(value = "/{networkId}/node/{id}", produces = MediaType.APPLICATION_JSON)
     @Secure(value = Roles.USER)
     NetworkNode getNetworkNode(String networkId, String id) {
         try {

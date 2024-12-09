@@ -51,7 +51,7 @@ class NetworkController {
 
     @Tag(name = "Network Operations")
     @Operation(summary = "Get network details **Secure")
-    @Get(value = "{id}", produces = MediaType.TEXT_PLAIN)
+    @Get(value = "{id}", produces = MediaType.APPLICATION_JSON)
     @Secure(value = Roles.USER)
     Network getNetwork(String id) {
         try {
