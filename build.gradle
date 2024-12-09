@@ -94,7 +94,7 @@ appengine {
         projectId = "trevorism-data"
         stopPreviousVersion = true
         promote = true
-        version = "0-0-1"
+        version = "0-1-0"
     }
 }
 

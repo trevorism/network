@@ -4,5 +4,9 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/trevorism/network)
 ![GitHub top language](https://img.shields.io/github/languages/top/trevorism/network)
 
+Trevorism Network API
+
+Deployed to [Network](https://network.data.trevorism.com/api)
+
 # How to build
 `gradle clean build`

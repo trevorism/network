@@ -9,7 +9,9 @@ import com.trevorism.event.model.EventSubscription
 import com.trevorism.https.SecureHttpClient
 import com.trevorism.model.Network
 import com.trevorism.model.NetworkNode
+import io.micronaut.runtime.http.scope.RequestScope
 
+@RequestScope
 class DefaultNetworkService implements NetworkService {
 
     private Repository<Network> repository
