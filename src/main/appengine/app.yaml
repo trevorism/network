@@ -1,4 +1,4 @@
-runtime: java17
+runtime: java25
 service: network
 entrypoint: java -jar network-all.jar
 handlers:
