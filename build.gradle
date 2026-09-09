@@ -63,6 +63,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.14.0'
     implementation 'com.trevorism:event-client:0.1.1'
     implementation 'com.trevorism:datastore-client:4.1.0'
+    implementation 'com.trevorism:micronaut-ui-auth:1.1.0'
 
     testImplementation 'com.trevorism:test-result-events:0.3.0'
     acceptanceImplementation 'io.cucumber:cucumber-groovy:6.10.4'
@@ -93,7 +94,7 @@ appengine {
         projectId = "trevorism-data"
         stopPreviousVersion = true
         promote = true
-        version = "0-2-0"
+        version = "0-3-0"
     }
 }
 
